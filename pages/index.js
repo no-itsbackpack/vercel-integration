@@ -8,8 +8,6 @@ export default function Home() {
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
 
-  const users = []
-
   return (
     <div className='min-h-screen flex  bg-white py-12 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-md w-full space-y-8'>
