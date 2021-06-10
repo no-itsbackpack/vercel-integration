@@ -18,7 +18,6 @@ thead {
 
 th {
   @apply font-medium;
-  /* @apply text-secondary; */
   @apply text-left;
   @apply text-sm;
   @apply px-2;
@@ -53,7 +52,6 @@ dt {
   @apply py-1.5;
   @apply font-medium;
   @apply border-b;
-  /* @apply text-secondary; */
   @apply col-span-1;
 }
 

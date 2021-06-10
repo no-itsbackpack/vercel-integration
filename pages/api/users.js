@@ -14,7 +14,7 @@ export default async (req, res) => {
         `insert into users (email, name, password) values ('${email}', '${name}', '${password}')`
       )
       res.statusCode = 201
-      res.json({})
+      res.json({ email, name })
       break
     case 'GET':
       const [getRows, _] = await conn.query('select * from users')
