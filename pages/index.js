@@ -11,20 +11,21 @@ export default function Home() {
   return (
     <div className='min-h-screen flex  bg-white py-12 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-md w-full space-y-8'>
-        <table className='border-separate border border-green-800 table-fixed'>
+        <table className='table-auto'>
           <thead>
             <tr>
-              <th className='w-1/2 p-2'>Name</th>
-              <th className='w-1/2 p-2'>Email</th>
+              <th scope='col'>Name</th>
+              <th scope='col'>Email</th>
+              <th />
             </tr>
           </thead>
           <tbody>
             {data.map((user) => (
               <tr key={user.id}>
-                <td className='border border-green-600 p-2'>{user.email}</td>
-                <td className='border border-green-600 p-2'>{user.name}</td>
-                <td className='border border-green-600 p-2'>
-                  <button className='text-white bg-red-600 hover:bg-red-700 border-rounded p-2'>Remove</button>
+                <td>{user.email}</td>
+                <td>{user.name}</td>
+                <td>
+                  <button className='text-white bg-red-600 hover:bg-red-700 rounded p-1 text-xs-'>Remove</button>
                 </td>
               </tr>
             ))}
